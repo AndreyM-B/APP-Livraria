@@ -26,7 +26,7 @@ export default function Login({navigation}) {
                 <TextInput style={styles.textInput} placeholder='SENHA' secureTextEntry={true} />
             </View>
             {/* BOTÃO DE LOGIN */}
-            <TouchableOpacity style={styles.btnLogin}>
+            <TouchableOpacity style={styles.btnLogin} onPress={()=>{navigation.navigate('DrawerMenu')}}>
                 <Text style={styles.txtLogin}>LOGIN</Text>
             </TouchableOpacity>
 
